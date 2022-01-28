@@ -1,0 +1,66 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --white: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    background-size: 100vw;
+}
+
+.register-link:hover {
+    background-color: var(--soft-magenta);
+    color: var(--white);
+}
+
+.fab:hover {
+    color: var(--soft-magenta) !important;
+}
+
+
+@media (min-width: 700px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+    }
+}
+
+.community-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.community-disc {
+    font-family: "open sans", sans-serif;
+}
+
+.register-link {
+    color: var(--violet);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--white); 
+}
+
+@media (min-width: 1024px) {
+    .community-title {
+        line-height: 5rem;
+        font-weight: bolder;
+    }
+
+}
